@@ -7,12 +7,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Joe McClorey</title>
-		<link rel="icon" type="image/png" href="./images/iconfinder-16.png"/>
-		
+		<link rel="icon" type="image/png" href="../images/iconfinder-16.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../mfizz/font-mfizz.css">
 <!-- Bootstrap CSS -->
 
-		<link rel="stylesheet" href="./css/portfolio.css">
-		<link rel="stylesheet" href="./css/images.css">
+		<link rel="stylesheet" href="../css/portfolio.css">
+		<link rel="stylesheet" href="../css/images.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	</head>
 	<body style="background-color:#777887">
@@ -24,7 +25,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="navbar-brand" href="#home">
-				<img src="./images/joeMac.png" alt="Joe McClorey">
+				<img src="../images/joeMac.png" alt="Joe McClorey">
 			</a>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				
@@ -66,7 +67,7 @@
 		<div class="jumbotron-fluid text-center" style="background-color: #ffffff; height: 675px;" id="home">
 			<div class="pagetop">
 				<div class="text-center">
-					<img height="80%" width="90%" src="./images/code.png" alt="" class="image2 text-center">
+					<img height="80%" width="90%" src="../images/code.png" alt="" class="image2 text-center">
 				</div>
 				<div class="intro">
 					<h1 class="display-1" style="color:#777887">
@@ -89,7 +90,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="mypic">
-							<img src="./images/smileyface1.png" alt="pic of me" class="rounded-circle" height="100" width="100">
+							<img src="../images/smileyface1.png" alt="pic of me" class="rounded-circle" height="100" width="100">
 							My Smiling Face. :)
 						</div>
 					</div>
@@ -97,9 +98,48 @@
 						<div class="profile">
 							<div class="info">
 								<p>Name: Joseph Charles McClorey</p>
-								<p>Age: 18</p>
-								<p>DOB: December 23</p>
-								<p>From: Kentucky</p>
+								<p>
+									<div id="countup">
+										Age:
+										<p id="years">00</p>
+										<p class="timeRefYears">years</p>
+										<p id="days">00</p>
+										<p class="timeRefDays">days</p>
+										<p id="hours">00</p>
+										<p class="timeRefHours">hours</p>
+										<p id="minutes">00</p>
+										<p class="timeRefMinutes">minutes</p>
+										<p id="seconds">00</p>
+										<p class="timeRefSeconds">seconds</p>
+									</div>
+									<script>
+										window.onload=function() {
+										// Month,Day,Year,Hour,Minute,Second
+										upTime('dec,23,1998,10:14:00'); // ****** Change this line!
+										};
+										function upTime(countTo) {
+										now = new Date();
+										countTo = new Date(countTo);
+										difference = (now-countTo);
+										days=Math.floor(difference/(60*60*1000*24)*1);
+										years = Math.floor(days / 365);
+										if (years > 1){ days = days - (years * 365)}
+										hours=Math.floor((difference%(60*60*1000*24))/(60*60*1000)*1);
+										mins=Math.floor(((difference%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
+										secs=Math.floor((((difference%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
+										document.getElementById('years').firstChild.nodeValue = years;
+										document.getElementById('days').firstChild.nodeValue = days;
+										document.getElementById('hours').firstChild.nodeValue = hours;
+										document.getElementById('minutes').firstChild.nodeValue = mins;
+										document.getElementById('seconds').firstChild.nodeValue = secs;
+
+										clearTimeout(upTime.to);
+										upTime.to=setTimeout(function(){ upTime(countTo); },1000);
+										}
+									</script>
+								</p>
+								<p>From: Burlington, KY</p>
+								<p>Born: Cincinnati, OH</p>
 							</div>
 						</div>
 					</div>
@@ -116,27 +156,28 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<img src="./images/if_Coding_Icons_-_SOLID-11_1024965.png" alt="">
+						<img src="../images/if_Coding_Icons_-_SOLID-11_1024965.png" alt="">
 						<figcaption>Software Developer</figcaption>
 					</div>
 					<div class="col">
-						<img src="./images/if_Coding_Icons_-_SOLID-14_1024968.png" alt="">
+						<img src="../images/if_Coding_Icons_-_SOLID-14_1024968.png" alt="">
 					</div>
 					<div class="col">	
-						<img src="./images/if_Coding_Icons_-_SOLID-04_1024958.png"						alt="">
+						<img src="../images/if_Coding_Icons_-_SOLID-04_1024958.png" alt="">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<img src="./images/if_Coding_Icons_-_SOLID-05_1024959.png" alt="">
+						<img src="../images/if_Coding_Icons_-_SOLID-05_1024959.png" alt="">
 					</div>
 					<div class="col">	
-						<img src="./images/if_Coding_Icons_-_SOLID-01_1024955.png" alt="">
+						<img src="../images/if_Coding_Icons_-_SOLID-01_1024955.png" alt="">
 					</div>
 					<div class="col">	
-						<img src="./images/if_Coding_Icons_-_SOLID-16_1024970.png" alt="">
+						<img src="../images/if_Coding_Icons_-_SOLID-16_1024970.png" alt="">
 					</div>
 				</div>
+			</div>
 		</div>
 
 <!-- /skills -->
@@ -149,23 +190,24 @@
 				<div class="row">
 					<div class="col">
 						<figure>
-							<img src="./images/if_warehouseman-01_2716082.png" alt="">
+							<img src="../images/if_warehouseman-01_2716082.png" alt="">
 							<figcaption>Warehouse</figcaption>
 						</figure>
 					</div>
-				</div>	
+				</div>
+			</div>
 			<br>
+			<h3>Soon to be...</h3>
 			<div class="row">
 				<div class="col">
-				<h3>Soon to be...</h3>
 					<figure>
-						<img src="./images/if_database-gear_532734.png" alt="">
+						<img src="../images/if_database-gear_532734.png" alt="">
 						<figcaption>Database</figcaption>
 					</figure>
 				</div>
 				<div class="col">
 					<figure>
-						<img src="./images/if_developer-api-coding-screen_532707.png" alt="">
+						<img src="../images/if_developer-api-coding-screen_532707.png" alt="">
 						<figcaption>Software Developer</figcaption>
 					</figure>	
 				</div>
@@ -178,35 +220,19 @@
 
 		<div class="container text-color" id="portfolio">
 			<div class="about">Portfolio</div>
-			<p>Visit my <a href="https://github.com/JoeMc98" class="gitlink">GitHub</a> account.
+			<p>Visit my <a href="https://github.com/JoeMc98" class="gitlink">GitHub</a> account.</p>
 		</div>
 
 <!-- /portfolio -->
 
 <!-- footer -->
 		
-		<ul class="nav justify-content-center" style="padding-bottom:10px ;padding-top:10px; background-color:white" id="contact">
-			<li class="nav-item">
-				<a class="nav-link text-white" href="https://www.facebook.com/joseph.mcclorey" target="_blank">
-					<img src="./images/if_online_social_media_facebook_734386.png" alt="Facebook">
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-white" href="https://www.linkedin.com/in/joseph-mcclorey-661739147/" target="_blank">
-					<img src="./images/if_linked_in_online_social_media_734393.png" alt="LinkedIn">
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-white" href="https://github.com/JoeMc98" target="_blank">
-					<img src="./images/if_social_media_logo_github_1221585.png" alt="GitHub">
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-white" href="mailto: jcmcclorey@gmail.com" target="_blank">
-					<img src="./images/if_mail_email_envelope_send_message_1011335.png" alt="Email">
-				</a>
-			</li>
-		</ul>
+			<ul class="nav justify-content-center" id="contact">
+				<li><a href="https://www.facebook.com/joseph.mcclorey" target="_blank"><i class="fa fa-facebook fa-2x icon-me"></i></a>
+				<li><a href="https://www.linkedin.com/in/joseph-mcclorey-661739147/" target="_blank"><i class="nav-item fa fa-linkedin fa-2x icon-me"></i></a>
+				<li><a href="https://github.com/JoeMc98" target="_blank"><i class="nav-item fa fa-github fa-2x icon-me"></i></a>
+				<li><a href="mailto:jcmcclorey@gmail.com" target="_blank"><i class="nav-item fa fa-envelope fa-2x icon-me"></i></a>				
+			</ul>
 		
 <!-- /footer -->
 
