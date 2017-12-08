@@ -4,35 +4,36 @@
 	
 <!-- Required meta tags -->
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Joe McClorey</title>
 		<link rel="icon" type="image/png" href="./images/iconfinder-16.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./mfizz/font-mfizz.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Bootstrap CSS -->
-
+		<link rel="stylesheet" href="./css/css/devicons.css">
 		<link rel="stylesheet" href="./css/portfolio.css">
 		<link rel="stylesheet" href="./css/images.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	</head>
-	<body style="background-color:#777887">
+
+	<body style="background-color:black">
 		
 <!-- navbar -->
 		
-		<nav class="navbar navbar-toggleable-md navbar-light sticky-top" style="background-color:#ffffff; color:#777887">
+		<nav class="navbar navbar-toggleable-md navbar-light sticky-top" style="background-color:#FFD700; color:#777887">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="navbar-brand" href="#home">
-				<img src="./images/joeMac.png" alt="Joe McClorey">
+				<h6 class="navfont">Joseph McClorey</h6>
 			</a>
 			<div class="collapse navbar-collapse" id="navbarNav">
-				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#about-me">
-							<div class="nav-text">About</div>
+						<a class="nav-link" href="#home">
+							<div class="nav-text">Home</div>
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
@@ -70,11 +71,12 @@
 					<img height="80%" width="90%" src="./images/code.png" alt="" class="image2 text-center">
 				</div>
 				<div class="intro">
-					<h1 class="display-1" style="color:#777887">
-						<div class="htext">Hi, I'm Joe</div>
+					<img src="./images/me.png" alt="" class="mypic">
+					<h1 class="display-1" style="color:black">
+						<div class="htext">JOE McCLOREY</div>
 					</h1>
-					<h4 class="" style="color:#777887">
-						<div class="htext2">Aspiring Software Developer</div>
+					<h4 class="" style="color:black">
+						<div class="htext2">Full-Stack Developer</div>
 					</h4>
 				</div>
 			</div>
@@ -82,99 +84,57 @@
 		
 <!-- /header -->
 
-<!-- about -->
-
-		<div class="container text-color" id="about-me">
-			<div class="about">About Me</div>
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="mypic">
-							<img src="./images/smileyface1.png" alt="pic of me" class="rounded-circle" height="100" width="100">
-							My Smiling Face. :)
-						</div>
-					</div>
-					<div class="col">
-						<div class="profile">
-							<div class="info">
-								<p>Name: Joseph Charles McClorey</p>
-								<p>
-									<div id="countup">
-										Age:
-										<p id="years">00</p>
-										<p class="timeRefYears">years</p>
-										<p id="days">00</p>
-										<p class="timeRefDays">days</p>
-										<p id="hours">00</p>
-										<p class="timeRefHours">hours</p>
-										<p id="minutes">00</p>
-										<p class="timeRefMinutes">minutes</p>
-										<p id="seconds">00</p>
-										<p class="timeRefSeconds">seconds</p>
-									</div>
-									<script>
-										window.onload=function() {
-										// Month,Day,Year,Hour,Minute,Second
-										upTime('dec,23,1998,10:14:00'); // ****** Change this line!
-										};
-										function upTime(countTo) {
-										now = new Date();
-										countTo = new Date(countTo);
-										difference = (now-countTo);
-										days=Math.floor(difference/(60*60*1000*24)*1);
-										years = Math.floor(days / 365);
-										if (years > 1){ days = days - (years * 365)}
-										hours=Math.floor((difference%(60*60*1000*24))/(60*60*1000)*1);
-										mins=Math.floor(((difference%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
-										secs=Math.floor((((difference%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
-										document.getElementById('years').firstChild.nodeValue = years;
-										document.getElementById('days').firstChild.nodeValue = days;
-										document.getElementById('hours').firstChild.nodeValue = hours;
-										document.getElementById('minutes').firstChild.nodeValue = mins;
-										document.getElementById('seconds').firstChild.nodeValue = secs;
-
-										clearTimeout(upTime.to);
-										upTime.to=setTimeout(function(){ upTime(countTo); },1000);
-										}
-									</script>
-								</p>
-								<p>From: Burlington, KY</p>
-								<p>Born: Cincinnati, OH</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-
-<!-- /about -->
-
 <!-- skills -->
 
 		<div class="container text-color" id="skills">
 			<div class="about">Skills</div>
 			<div class="container">
 				<div class="row">
-					<div class="col">
-						<img src="./images/if_Coding_Icons_-_SOLID-11_1024965.png" alt="">
-						<figcaption>Software Developer</figcaption>
+					<div class="col">	
+						<i class="fa fa-4x devicon-dot-net-plain skill-icon"></i>
+						<p class="skill-text">.Net Framework</p>
 					</div>
 					<div class="col">
-						<img src="./images/if_Coding_Icons_-_SOLID-14_1024968.png" alt="">
+						<i class="fa fa-4x devicon-csharp-plain skill-icon"></i>
+						<p class="skill-text">C<span style="font-family: Arial">#</span></p>
 					</div>
 					<div class="col">	
-						<img src="./images/if_Coding_Icons_-_SOLID-04_1024958.png" alt="">
+						<i class="fa fa-css3 fa-4x skill-icon"></i>
+						<p class="skill-text">CSS3</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<img src="./images/if_Coding_Icons_-_SOLID-05_1024959.png" alt="">
+						<i class="fa fa-html5 fa-4x skill-icon"></i>
+						<p class="skill-text">HTML5</p>
 					</div>
 					<div class="col">	
-						<img src="./images/if_Coding_Icons_-_SOLID-01_1024955.png" alt="">
+						<i class="fa fa-4x devicon-bootstrap-plain skill-icon"></i>
+						<p class="skill-text">Bootstrap</p>
 					</div>
+					<div class="col">
+						<i class="fa fa-4x devicon-git-plain skill-icon"></i>
+						<p class="skill-text">git</p>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col">	
-						<img src="./images/if_Coding_Icons_-_SOLID-16_1024970.png" alt="">
+						<i class="fa fa-4x devicon-javascript-plain skill-icon"></i>
+						<p class="skill-text">JavaScript</p>
+					</div>
+					<div class="col">
+						<i class="fa fa-4x devicon-visualstudio-plain skill-icon"></i>
+						<p class="skill-text">Visual Studio</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">	
+						<i class="fa fa-4x fa-database skill-icon"></i>
+						<p class="skill-text">SQL</p>
+					</div>
+					<div class="col">
+					<i class="fa fa-4x skill-icon devicon-jquery-plain"></i>
+					<p class="skill-text">jQuery</p>
 					</div>
 				</div>
 			</div>
@@ -190,26 +150,25 @@
 				<div class="row">
 					<div class="col">
 						<figure>
-							<img src="./images/if_warehouseman-01_2716082.png" alt="">
-							<figcaption>Warehouse</figcaption>
+							<img src="./images/signature-hardware-squarelogo-1442496269955.png" alt="" class="shpic">
+					</div>
+					<div class="col">
+							<p><a href="http://www.signaturehardware.com/" class="shlink tip" target="_blank"
+								data-toggle="tooltip" data-placement="top" title="www.signaturehardware.com">Signature Hardware</a> warehouse</p>
 						</figure>
 					</div>
 				</div>
 			</div>
 			<br>
-			<h3>Soon to be...</h3>
 			<div class="row">
 				<div class="col">
 					<figure>
-						<img src="./images/if_database-gear_532734.png" alt="">
-						<figcaption>Database</figcaption>
-					</figure>
+						<img src="./images/logo-2.jpg" alt="" class="ttaimage">
 				</div>
 				<div class="col">
-					<figure>
-						<img src="./images/if_developer-api-coding-screen_532707.png" alt="">
-						<figcaption>Software Developer</figcaption>
-					</figure>	
+						<p><a href="https://learncodinganywhere.com/" class="shlink tip" target="_blank"
+							data-toggle="tooltip" data-placement="top" title="www.learncodinganywhere.com">The Tech Academy</a></p>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -220,7 +179,8 @@
 
 		<div class="container text-color" id="portfolio">
 			<div class="about">Portfolio</div>
-			<p>Visit my <a href="https://github.com/JoeMc98" class="gitlink">GitHub</a> account.</p>
+			<p>Visit my <a href="https://github.com/JoeMc98" class="gitlink tip" target="_blank"
+				data-toggle="tooltip" data-placement="top" title="www.github.com/JoeMc98">GitHub</a> account.</p>
 		</div>
 
 <!-- /portfolio -->
@@ -231,7 +191,8 @@
 				<li><a href="https://www.facebook.com/joseph.mcclorey" target="_blank"><i class="fa fa-facebook fa-2x icon-me"></i></a>
 				<li><a href="https://www.linkedin.com/in/joseph-mcclorey-661739147/" target="_blank"><i class="nav-item fa fa-linkedin fa-2x icon-me"></i></a>
 				<li><a href="https://github.com/JoeMc98" target="_blank"><i class="nav-item fa fa-github fa-2x icon-me"></i></a>
-				<li><a href="mailto:jcmcclorey@gmail.com" target="_blank"><i class="nav-item fa fa-envelope fa-2x icon-me"></i></a>				
+				<li><a href="mailto:jcmcclorey@gmail.com" target="_blank"><i class="nav-item fa fa-envelope fa-2x icon-me"></i></a>
+				<li><a href="https://www.meetup.com/members/239060119/" target="_blank"><i class="nav-item fa fa-meetup fa-2x icon-me"></i></a>				
 			</ul>
 		
 <!-- /footer -->
@@ -240,5 +201,10 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+		<script>
+			$('.tip').tooltip()
+		</script>
+				
 	</body>
 </html>
