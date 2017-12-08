@@ -3,7 +3,7 @@
 {
 	font-family: Distant Galaxy;
 	src: local("Distant Galaxy")
-		 url("../fonts/DISTGRG_-webfont.woff") format("woff");
+		 url("./fonts/DISTGRG_-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
