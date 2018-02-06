@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edit Post Modal</title>
+    <link rel="icon" type="image/png" href="../images/myicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/project.css" rel="stylesheet" />
+</head>
+<body>
+    <h5>Screen</h5>
+    <img src="../images/EditPost.JPG" alt="" id="image1"/>
+    <h5>Code</h5>
+    <img src="../images/EditPostGetCode.JPG" alt="" id="image2" />
+    <img src="../images/EditPostPostCode.JPG" alt="" id="image3" />
+    <img src="../images/EditPostcshtml.JPG" alt="" id="image4" />
+    <p>
+        This user story added a functionality that allows the users of the website to edit the image they posted and the
+        caption they entered in the text box underneath. The "Change Picture" button is linked to a file selector with
+        underlying js to allow the user to select their image and the text area is populated with the current caption.
+        When the user is done the save button adds the image to the database and updates the caption in the database.
+    </p>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content myImages" id="img01" />
+    </div>
+
+    <div id="myModal02" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content myImages" id="img02" />
+    </div>
+
+    <div id="myModal03" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content myImages" id="img03" />
+    </div>
+
+    <div id="myModal04" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content myImages" id="img04" />
+    </div>
+
+    <script src="../js/4Images.js"></script>
+
+</body>
+</html>
