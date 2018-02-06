@@ -1,9 +1,8 @@
-
 @font-face
 {
 	font-family: Distant Galaxy;
 	src: local("Distant Galaxy")
-		 url("./fonts/DISTGRG_-webfont.woff") format("woff");
+		 url("../fonts/DISTGRG_-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -14,15 +13,11 @@
 	font-size: 16px;
 	color: black;
 }
+
 .nav-text
 {
 	color: black;
 	font-family: Distant Galaxy, Impact, Comic Sans, Arial, sans-serif;
-}
-
-.tooltip-inner
-{
-	max-width: 350px;
 }
 
 .nav-text:hover
@@ -30,6 +25,11 @@
 	text-decoration: underline;
 	color: white;
 	text-shadow: 0 0 3px black;
+}
+
+.tooltip-inner
+{
+	max-width: 350px;
 }
 
 .mypic
@@ -101,7 +101,7 @@
 	background-color: #777887;
 }
 
-#skills, #experience, #portfolio, #interests
+#skills, #experience, #portfolio, #interests, #bio
 {
 	text-align: center;
 	padding-top: 110px;
@@ -190,4 +190,11 @@
 	background-color: white;
 	border-radius: 50%;
 	border: 5px solid white;
+}
+
+.portfolio-img
+{
+    height: 150px;
+    width: auto;
+    max-width: 250px;
 }
