@@ -204,20 +204,20 @@
                 Projects
             </h5>
             <div class="col">
-                <p><a href="pizzaproject.html" class="gitlink">JavaScript Project</a></p>
-                <p><a href="flightmanager.html" class="gitlink">Knockout.js Project</a></p>
+                <p class="gitlink" id="jsproj">JavaScript Project</p>
+                <p class="gitlink" id="koproj">Knockout.js Project</p>
             </div>
             <h5 style="text-decoration: underline;">
                 <a href="https://learncodinganywhere.com/" target="_blank" class="gitlink">The Tech Academy</a> Live Project
             </h5>
             <div class="col">
-                <p><a href="editPost.html" class="gitlink">Edit Modal</a></p>
-                <p><a href="search.html" class="gitlink">Search Box</a></p>
-                <p> <a href="chatbox.html" class="gitlink">Chat Box</a></p>
+                <p class="gitlink" id="editproj">Edit Modal</p>
+                <p class="gitlink" id="searchproj">Search Box</p>
+                <p class="gitlink" id="chatproj">Chat Box</p>
             </div>
             <div class="col">
-                <p><a href="dropdown.html" class="gitlink">Dropdown Fix</a></p>
-                <p><a href="timestamp.html" class="gitlink">Timestamp Fix</a></p>
+                <p class="gitlink" id="dropproj">Dropdown Fix</p>
+                <p class="gitlink" id="timeproj">Timestamp Fix</p>
             </div>
             <p>
                 Visit my <a href="https://github.com/JoeMc98" class="gitlink tip" target="_blank"
@@ -237,6 +237,192 @@
         </ul>
 
         <!-- /footer -->
+        <!-- hidden divs -->
+        <!-- pizza project -->
+        <div class="show-modal" id="js-modal">
+            <span class="close">&times;</span><!--1-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/pizzaParlor.JPG" alt="" id="image1" />
+                <p>
+                    This project was an exercise demonstrating my knowledge and use of JavaScript and jQuery.
+                    It simulates a pizza ordering website where the user is allowed to customize their pizza.
+                    <br />
+                    <a href="https://github.com/JoeMc98/Pizza-Project" target="_blank" class="gitlink"> Download my code here.</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span><!--2-->
+            <img class="modal-content myImages" id="img01" />
+        </div>
+        <!-- /pizza project -->
+        <!-- ko -->
+        <div class="show-modal" id="ko-modal">
+            <span class="close">&times;</span><!--3-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/flightmanager.JPG" alt="" id="image2" />
+                <img src="../images/flightmanagerdata.JPG" alt="" id="image3" />
+                <p>
+                    In this project the requirments were to select something I had never worked with before. I chose to use the Knockout.js
+                    library to create a program that imitates a flight reservation website. The user is allowed to select from any one of
+                    over 7000 airports as either their current situation or their destination. The program charges an initial &#36;50 fee and
+                    enforces a fixed rate of 11&cent;/mile. I added an extra page that displays each flight plan that has been entered into
+                    the database. 
+                    <br />
+                    <a href="https://github.com/JoeMc98/Flight-Manager" target="_blank" class="gitlink">Download my code here</a>.
+                </p>
+            </div>
+        </div>
+
+        <div id="myModal02" class="modal">
+            <span class="close">&times;</span><!--4-->-->
+            <img class="modal-content myImages" id="img02" />
+        </div>
+
+        <div id="myModal03" class="modal">
+            <span class="close">&times;</span><!--5-->
+            <img class="modal-content myImages" id="img03" />
+        </div>
+
+
+        <!-- /ko -->
+        <!-- edit -->
+        <div class="show-modal" id="edit-modal">
+            <span class="close">&times;</span><!--6-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/EditPost.JPG" alt="" id="image4" />
+                <h5>Code</h5>
+                <img src="../images/EditPostGetCode.JPG" alt="" id="image5" />
+                <img src="../images/EditPostPostCode.JPG" alt="" id="image6" />
+                <img src="../images/EditPostcshtml.JPG" alt="" id="image7" />
+                <p>
+                    This user story added a functionality that allows the users of the website to edit the image they posted and the
+                    caption they entered in the text box underneath. The "Change Picture" button is linked to a file selector with
+                    underlying js to allow the user to select their image and the text area is populated with the current caption.
+                    When the user is done the save button adds the image to the database and updates the caption in the database.
+                </p>
+            </div>
+        </div>
+        <div id="myModal04" class="modal">
+            <span class="close">&times;</span><!--7-->
+            <img class="modal-content myImages" id="img04" />
+        </div>
+
+        <div id="myModal05" class="modal">
+            <span class="close">&times;</span><!--8-->
+            <img class="modal-content myImages" id="img05" />
+        </div>
+
+        <div id="myModal06" class="modal">
+            <span class="close">&times;</span><!--9-->
+            <img class="modal-content myImages" id="img06" />
+        </div>
+
+        <div id="myModal07" class="modal">
+            <span class="close">&times;</span><!--10-->
+            <img class="modal-content myImages" id="img07" />
+        </div>
+
+        <!-- /edit -->
+        <!-- search -->
+        <div class="show-modal" id="search-modal">
+            <span class="close">&times;</span><!--11-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/SearchByCountry.JPG" alt="" id="image8" />
+                <h5>Code</h5>
+                <img src="../images/SearchCountryCode.JPG" alt="" id="image9" />
+                <img src="../images/SearchByCountryCode.JPG" alt="" id="image10" />
+                <p>
+                    I added functionality that allowed the user to search for people that live in or have visited a country. The country
+                    is entered above the map the site members that match the search are listed in the "Locals" section. In addition to
+                    this code I had to edit the database to accept the country of a particular place.
+                </p>
+            </div>
+        </div>
+        <div id="myModal08" class="modal">
+            <span class="close">&times;</span><!--12-->
+            <img class="modal-content myImages" id="img08" style="max-height: 80%; max-width: 80%;" />
+        </div>
+
+        <div id="myModal09" class="modal">
+            <span class="close">&times;</span><!--13-->
+            <img class="modal-content myImages" id="img09" />
+        </div>
+
+        <div id="myModal10" class="modal">
+            <span class="close">&times;</span><!--14-->
+            <img class="modal-content myImages" id="img10" />
+        </div>
+        <!-- /search -->
+        <!-- chat -->
+        <div class="show-modal" id="chat-modal">
+            <span class="close">&times;</span><!--15-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/ChatBox.JPG" alt="" id="image11" />
+                <h5>Code</h5>
+                <img src="../images/ChatBoxRefreshCode.JPG" alt="" id="image12" />
+                <p>
+                    I allowed the user to chat with one or more people without having to refresh the entire page. The chat box
+                    updates asynchronously each time a new message is added the respective conversation.
+                </p>
+            </div>
+        </div>
+        <div id="myModal11" class="modal">
+            <span class="close">&times;</span><!--16-->
+            <img class="modal-content myImages" id="img11" />
+        </div>
+
+        <div id="myModal12" class="modal">
+            <span class="close">&times;</span><!--17-->
+            <img class="modal-content myImages" id="img12" />
+        </div>
+        <!-- /chat -->
+        <!-- dropdown -->
+        <div class="show-modal" id="drop-modal">
+            <span class="close">&times;</span><!--18-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/WanderersDropdownWas.JPG" alt="" id="image13" />
+                <img src="../images/WanderersDropdownIs.JPG" alt="" id="image14" />
+                <p>
+                    This story required me to fix this dropdown so when it is selected appears as on the right rather than on the left.
+                </p>
+            </div>
+        </div>
+        <div id="myModal13" class="modal">
+            <span class="close">&times;</span><!--19-->
+            <img class="modal-content myImages" id="img13" />
+        </div>
+
+        <div id="myModal14" class="modal">
+            <span class="close">&times;</span><!--20-->
+            <img class="modal-content myImages" id="img14" />
+        </div>
+        <!-- /dropdown -->
+        <!-- timestamp -->
+        <div class="show-modal" id="time-modal">
+            <span class="close">&times;</span><!--21-->
+            <div class="show-modal-content">
+                <h5>Screen</h5>
+                <img src="../images/TimeStampWas.JPG" alt="" id="image15" style="height: 150px; width: 700px;" />
+                <p>
+                    This was a simple CSS fix that needed to have the timestamp displayed in it's present spot rather than across the
+                    page. I also added the timestamp to each comment instead of having it display for the first five.
+                </p>
+            </div>
+        </div>
+        <div id="myModal15" class="modal">
+            <span class="close">&times;</span><!--22-->
+            <img class="modal-content myImages" id="img15" />
+        </div>
+        <!-- /timestamp -->
+        <!-- /hidden divs -->
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
