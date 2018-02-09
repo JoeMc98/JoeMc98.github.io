@@ -38,11 +38,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#bio">
-                            <div class="nav-text">Bio</div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#skills">
                             <div class="nav-text">Skills</div>
                         </a>
@@ -50,6 +45,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">
                             <div class="nav-text">Experience</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">
+                            <div class="nav-text">Education</div>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -87,26 +87,6 @@
         </div>
 
         <!-- /header -->
-        <!-- bio -->
-
-        <div class="container text-color" id="bio">
-            <div class="about">Bio</div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p><span>Name: </span><span>Joseph McClorey</span></p>
-                        <p><span>Age: </span><span id="ageLabel">19</span></p>
-                        <p><span>Birthday: </span><span>December 23</span></p>
-                        <p><span></span><span></span></p>
-                    </div>
-                    <div class="col">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- /bio -->
         <!-- skills -->
 
         <div class="container text-color" id="skills">
@@ -169,39 +149,73 @@
         <div class="container text-color" id="experience">
             <div class="about">Experience</div>
             <div class="container">
+                <div class="row" style="padding-bottom: 25px;">
+                    <div class="col">
+                        <img src="../images/prosperIT.png" alt="" class="shpic">
+                    </div>
+                    <div class="col">
+                        <p>
+                            <a href="https://www.facebook.com/prosperitconsulting/" class="shlink tip" target="_blank"
+                               data-toggle="tooltip" data-placement="top" title="Prosper I.T. - Facebook">Prosper I.T. Consulting</a>
+                        </p>
+                        <p>
+                            At Prosper I.T. I worked on a development team creating <a href="http://bewander.com/" target="_blank" 
+                            class="gitlink">bewander.com</a> in a Scrum environment for 2 sprints. I completed quite a few user 
+                            stories in this time most of which can be viewed via the links below in the 
+                            "<a href="#portfolio" class="gitlink">Portfolio</a>" section.
+                        </p>
+                    </div>
+                </div>
                 <div class="row">
+                    
                     <div class="col">
                         <img src="../images/signature-hardware-squarelogo-1442496269955.png" alt="" class="shpic">
                     </div>
                     <div class="col">
                         <p>
                             <a href="http://www.signaturehardware.com/" class="shlink tip" target="_blank"
-                               data-toggle="tooltip" data-placement="top" title="www.signaturehardware.com">Signature Hardware</a> warehouse
+                               data-toggle="tooltip" data-placement="top" title="www.signaturehardware.com">Signature Hardware</a>
+                        </p> 
+                        <p>
+                                I worked 2 stints here one as a summer job in 2015. I helped the photographers in the photo
+                                studio by unpacking new product and preparing it to be shot. From June 2016 - November 2017 
+                                I was in the shipping area of the warehouse where I picked, assembled and packed orders.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /experience -->
+        <!-- education -->
+        <div class="container text-color" id="education">
+            <div class="about">Education</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="../images/logo-2.jpg" alt="" class="ttaimage">
+                    </div>
+                    <div class="col">
+                        <p>
+                            <a href="https://learncodinganywhere.com/" class="shlink tip" target="_blank"
+                                data-toggle="tooltip" data-placement="top" title="www.learncodinganywhere.com">The Tech Academy</a>
+                        </p>
+                        <p>
+                            I am currently attending The Tech Academy which has prepared me as a Junior Web Developer 
+                            through the study of many languages including C#, JavaScript, T-SQL, HTML, CSS and more.
                         </p>
                     </div>
                 </div>
             </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <img src="../images/logo-2.jpg" alt="" class="ttaimage">
-                </div>
-                <div class="col">
-                    <p>
-                        <a href="https://learncodinganywhere.com/" class="shlink tip" target="_blank"
-                           data-toggle="tooltip" data-placement="top" title="www.learncodinganywhere.com">The Tech Academy</a>
-                    </p>
-                </div>
-            </div>
         </div>
 
-        <!-- /experience -->
+        <!-- /education -->
         <!-- portfolio -->
 
         <div class="container text-color" id="portfolio">
             <div class="about">Portfolio</div>
             <h5 style="text-decoration: underline;">
-                Projects
+                Personal Projects
             </h5>
             <div class="col">
                 <p class="gitlink" id="jsproj">JavaScript Project</p>
@@ -270,7 +284,7 @@
                     library to create a program that imitates a flight reservation website. The user is allowed to select from any one of
                     over 7000 airports as either their current situation or their destination. The program charges an initial &#36;50 fee and
                     enforces a fixed rate of 11&cent;/mile. I added an extra page that displays each flight plan that has been entered into
-                    the database. 
+                    the database.
                     <br />
                     <a href="https://github.com/JoeMc98/Flight-Manager" target="_blank" class="gitlink">Download my code here</a>.
                 </p>
