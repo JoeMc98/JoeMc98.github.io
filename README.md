@@ -1,4 +1,4 @@
-<h2>JoeMc98.github.io</h2>
+<h2>jcmcclorey.github.io</h2>
 <p>
 This is my portfolio page. I decided to have a little fun with it and integrate a Star Wars-like theme. 
 You may not get the full effect because the main font "Distant Galaxy" is almost definitely installed on your computer.
